@@ -52,6 +52,17 @@ By default, the dataset dependent text embedding layers are [ignored]
 N.b.  When performing Mel-Spectrogram to Audio synthesis, make sure Tacotron 2
 and the Mel decoder were trained on the same mel-spectrogram representation. 
 
+## New Language Edits
+
+1. Ensure audio and text are formatted properly and separated into test/validation/test sets.
+
+2. Change hparams.py to point to train and validation sets.
+
+3. Change punctuation and letters to match language.
+
+4. Update text_cleaners hyperparameter
+
+5. Train!
 
 ## Related repos
 [WaveGlow](https://github.com/NVIDIA/WaveGlow) Faster than real time Flow-based
